@@ -1,4 +1,4 @@
-﻿using System.Security.Cryptography;
+﻿using System;
 
 namespace EX3
 {
@@ -6,8 +6,6 @@ namespace EX3
     {
         static void Main(string[] args)
         {
-
-            string mensagem = "";
             double numero1 = 0;
             double numero2 = 0;
 
@@ -17,9 +15,20 @@ namespace EX3
             Console.WriteLine("Informe o numero2:");
             numero2 = Convert.ToDouble(Console.ReadLine());
 
-            if (numero1 > numero2) {
-                mensagem = "O numero1 é maior que o numero2";
+            if (numero1 > numero2)
+            {
+                Console.WriteLine($"O maior número é: {numero1}");
+            }
+            else if (numero1 < numero2)
+            {
+                Console.WriteLine($"O maior número é: {numero2}");
+            }
+            else
+            {
+                Console.WriteLine("Os números são iguais.");
+            }
         }
     }
 }
-//Faça um algoritmo que preça dois números e imprima o maior deles
+
+//Faça um algoritmo que peça dois números e imprima o maior deles
