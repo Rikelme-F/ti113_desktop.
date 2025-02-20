@@ -1,5 +1,4 @@
-﻿namespace EX4
-
+﻿namespace EX5
 {
     internal class Program
     {
@@ -19,7 +18,9 @@
             Console.Write("\n");
 
             int maior = numeros.Max();
-            Console.Write($"O maior número é {maior}");
+            Console.WriteLine($"O maior número é {maior}");
+            int menor = numeros.Min();
+            Console.WriteLine($"O menor número é {menor}");
         }
     }
 }
